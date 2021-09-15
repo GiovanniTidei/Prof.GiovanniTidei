@@ -33,5 +33,5 @@ function expand() {
 //Velocità audio
 var vid = document.getElementsByTagName("audio");
 for (var i = 0; i < vid.length; i++) {
-    vid[i].playbackRate = 1.2;
+    vid[i].playbackRate = 1.1;
 }
