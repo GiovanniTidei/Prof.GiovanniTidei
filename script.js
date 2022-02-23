@@ -26,6 +26,16 @@
 
 // });
 
+
+
+//close youtube with x
+$(function() {
+    $('.close').click(function() {
+        $('iframe').attr('src', $('iframe').attr('src'));
+    });
+});
+
+//close each audio when oneother play
 document.addEventListener('play', function(e) {
     var audios = document.getElementsByTagName('audio');
     for (var i = 0, len = audios.length; i < len; i++) {
