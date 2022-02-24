@@ -29,10 +29,40 @@
 
 
 //close youtube with x
-$(function() {
-    $('.close').click(function() {
-        $('iframe').attr('src', $('iframe').attr('src'));
-    });
+//$(function() {
+//   $('.close').click(function() {
+//      $('iframe').attr('src', $('iframe').attr('src'));
+//  });
+//});
+
+
+
+//YOUTUBE VIDEO
+$('.play-button').click(function(e) {
+    var iframeEl = $('<iframe>', { src: $(this).data('url') });
+    $('#youtubevideo-F').attr('src', $(this).data('url'));
+})
+
+$('#close-video-F').click(function(e) {
+    $('#youtubevideo-F').attr('src', '');
+});
+
+$(document).on('hidden.bs.modal', '#myModal-F', function() {
+
+    $('#youtubevideo-F').attr('src', '');
+});
+
+$('.play-button').click(function(e) {
+    var iframeEl = $('<iframe>', { src: $(this).data('url') });
+    $('#youtubevideo-S').attr('src', $(this).data('url'));
+})
+
+$('#close-video-S').click(function(e) {
+    $('#youtubevideo-S').attr('src', '');
+});
+
+$(document).on('hidden.bs.modal', '#myModal-S', function() {
+    $('#youtubevideo-S').attr('src', '');
 });
 
 //close each audio when oneother play

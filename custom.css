@@ -90,3 +90,57 @@
                 width: 100%;
                 height: 100%;
             }
+            /*video youtube modal*/
+            
+            .youtube-video .modal-dialog {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 100%;
+                padding: 0 15px;
+                height: 100%;
+                max-width: 1000px !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            #video-container {
+                position: relative;
+                padding-bottom: 50%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+            }
+            
+            iframe#youtubevideo-F {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+            
+            iframe#youtubevideo-S {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+            
+            .youtube-video .modal-footer {
+                border: none;
+                text-align: center;
+                display: block;
+                padding: 0;
+            }
+            
+            .youtube-video .modal-content {
+                background: none !important;
+                border: none;
+            }
+            /*FINE video youtube modal*/
