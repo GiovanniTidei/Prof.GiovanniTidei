@@ -144,3 +144,12 @@
                 border: none;
             }
             /*FINE video youtube modal*/
+            /*-----  password unlock ----*/
+            
+            .hidden {
+                display: none;
+            }
+            
+            .hidden2 {
+                display: none;
+            }

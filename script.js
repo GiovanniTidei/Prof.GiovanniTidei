@@ -34,6 +34,22 @@
 //      $('iframe').attr('src', $('iframe').attr('src'));
 //  });
 //});
+//BLOCCO pasww
+var _0x517c = ["\x70\x72\x6F\x6A\x65\x63\x74"];
+var cle = _0x517c[0]
+
+
+function checkPassword() {
+
+    if (passwordInput.value.match(cle)) {
+        /*  document.getElementById("checkButton").innerHTML = "Accesso riuscito!"; */
+        document.getElementById("check").classList.add("hidden2");
+
+        document.querySelector('.hidden').classList.remove('hidden');
+    } else {
+        document.getElementById("checkButton").innerHTML = "Riprova";
+    }
+}
 
 
 

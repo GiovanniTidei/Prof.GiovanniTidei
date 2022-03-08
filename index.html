@@ -32,33 +32,51 @@
     <script>
         AOS.init();
     </script>
+    <!-- Passw access -->
+    <div id="check" style="margin-top: 80px; margin-left: 5%;">
+        <nav class="nav">
 
-    <!-- ---------- scroll indicator ---------- -->
-
-    <div class="header">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
+            <div class="passwords">
+                <div class="forms">
+                    <div class="enterPass">
+                        <input id="passwordInput" type="password" maxlength="25" placeholder="Password" class="topInput" />
+                        <button id="checkButton" onclick="checkPassword()" class="topButton" style="outline: none;">Accedi</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
+    <!--fine psw access -->
+    <!--Sezione Main sblocco-->
+    <section class="hidden" id="reload">
 
-    <!-- <button style="outline:none; position: fixed;" id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button animate__animated animate__pulse animate__repeat-3"><span class="hamburger-menu-button-open">Menu</span></button>
+
+        <!-- ---------- scroll indicator ---------- -->
+
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+
+        <!-- <button style="outline:none; position: fixed;" id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button animate__animated animate__pulse animate__repeat-3"><span class="hamburger-menu-button-open">Menu</span></button>
     <nav id="ham-navigation" class="ham-menu" style="position: fixed;">
 
         <ul class="menu">
             <li><a href="#galleria" onclick="openPage('Filosofia')">Filosofia</a></li>
             <li><a href="#galleria" onclick="openPage('Storia')">Storia</a></li> -->
-    <!-- <li><a href="#galleria" onclick="openPage('Altro')">Altro</a></li> -->
+        <!-- <li><a href="#galleria" onclick="openPage('Altro')">Altro</a></li> -->
 
-    <!-- </ul>
+        <!-- </ul>
     </nav> -->
 
-    <!-- --------- scroll indicator ---------- --->
+        <!-- --------- scroll indicator ---------- --->
 
-    <!-- -------------- navbar----------------- -->
+        <!-- -------------- navbar----------------- -->
 
-    <section>
-        <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
-        <label for="page-nav-toggle">
+        <section>
+            <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+            <label for="page-nav-toggle">
       <svg class="icon--menu-toggle" viewBox="0 0 60 30">
         <g class="icon-group">
           <g class="icon--menu">
@@ -74,1182 +92,1186 @@
       </svg>
     </label>
 
-        <nav class="main-navigation">
-            <div class="container">
+            <nav class="main-navigation">
+                <div class="container">
 
 
-                <h1 class="">3^ classe</h1>
-                <div id="accordion">
+                    <h1 class="">3^ classe</h1>
+                    <div id="accordion">
 
-                    <div id="headingOne" class="pl-1 mb-2">
+                        <div id="headingOne" class="pl-1 mb-2">
 
-                        <div class="btn-group d-flex justify-content-around pt-4" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="openPage('Filosofia')">Programma Filosofia</button>
-                            <button type="button" class="btn btn-outline-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Programma Storia</button>
+                            <div class="btn-group d-flex justify-content-around pt-4" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-outline-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="openPage('Filosofia')">Programma Filosofia</button>
+                                <button type="button" class="btn btn-outline-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Programma Storia</button>
 
-                        </div>
-
-                    </div>
-
-                    <!-- Programma Filosofia 3^ -->
-
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div>
-                            <br>
-
-                            <p>- Nascita della filosofia
-                                <br>- Ionici e Pitagorici
-                                <br>- Eraclito, Parmenide, Zenone
-                                <br>- I pluralisti
-                                <br>- I sofisti
-                                <br>- Socrate
-                                <br>- Platone
-                                <br>- Aristotele
-                                <br>- L' ellenismo e le sue scuole
-                                <br>- Plotino e il neoplatonismo
-                                <br>- La Filosofia Medievale
-                                <br>- Sant'Agostino
-                                <br>- San Tommaso d'Aquino
-                            </p>
-
-                            <!-- <a href="/programm.pdf" download><i class="fa fa-download"></i>&ensp;Curriculm Vitae</a> -->
-                        </div>
-                    </div>
-
-
-                    <!-- Programma Storia 3^-->
-
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div>
-                            <br>
-
-                            <p>- Carlo Magno e il Sacro Romano Impero
-                                <br>- La rinascita dell’anno Mille
-                                <br>- Conflitto tra Impero e Chiesa
-                                <br>- Le Monarchie feudali
-                                <br>- Dai comuni alle signorie
-                                <br>- L’età dei fermenti religiosi e della rinascita culturale
-                                <br>- L’età delle monarchie nazionali e la crisi del 300
-                                <br>- La guerra dei cent'anni
-                                <br>- L'Italia degli stati regionali e l'umanesimo
-                                <br>- L’età delle grandi esplorazioni geografiche
-                                <br>- Il rinascimento
-                                <br>- L’impero di Carlo V e la Riforma
-                                <br>- L’Italia nel Cinquecento
-                                <br>- La la Riforma e la Controriforma
-                                <br>- Crisi e sviluppo, assolutismo e liberismo
-                            </p>
-
-
-                        </div>
-
-                    </div>
-
-                    <div id="headingThree">
-
-
-                        <div class="row mt-5 pl-3">
-
-                            <div class="col-2">
-                                <a href="https://api.whatsapp.com/send?phone=+393345044443?">
-                                    <p class="pNavWhats"><i class="fa fa-whatsapp contactNavLink"></i></p>
-                                </a>
                             </div>
-                            <!-- <div class="col-4">
+
+                        </div>
+
+                        <!-- Programma Filosofia 3^ -->
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div>
+                                <br>
+
+                                <p>- Nascita della filosofia
+                                    <br>- Ionici e Pitagorici
+                                    <br>- Eraclito, Parmenide, Zenone
+                                    <br>- I pluralisti
+                                    <br>- I sofisti
+                                    <br>- Socrate
+                                    <br>- Platone
+                                    <br>- Aristotele
+                                    <br>- L' ellenismo e le sue scuole
+                                    <br>- Plotino e il neoplatonismo
+                                    <br>- La Filosofia Medievale
+                                    <br>- Sant'Agostino
+                                    <br>- San Tommaso d'Aquino
+                                </p>
+
+                                <!-- <a href="/programm.pdf" download><i class="fa fa-download"></i>&ensp;Curriculm Vitae</a> -->
+                            </div>
+                        </div>
+
+
+                        <!-- Programma Storia 3^-->
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div>
+                                <br>
+
+                                <p>- Carlo Magno e il Sacro Romano Impero
+                                    <br>- La rinascita dell’anno Mille
+                                    <br>- Conflitto tra Impero e Chiesa
+                                    <br>- Le Monarchie feudali
+                                    <br>- Dai comuni alle signorie
+                                    <br>- L’età dei fermenti religiosi e della rinascita culturale
+                                    <br>- L’età delle monarchie nazionali e la crisi del 300
+                                    <br>- La guerra dei cent'anni
+                                    <br>- L'Italia degli stati regionali e l'umanesimo
+                                    <br>- L’età delle grandi esplorazioni geografiche
+                                    <br>- Il rinascimento
+                                    <br>- L’impero di Carlo V e la Riforma
+                                    <br>- L’Italia nel Cinquecento
+                                    <br>- La la Riforma e la Controriforma
+                                    <br>- Crisi e sviluppo, assolutismo e liberismo
+                                </p>
+
+
+                            </div>
+
+                        </div>
+
+                        <div id="headingThree">
+
+
+                            <div class="row mt-5 pl-3">
+
+                                <div class="col-2">
+                                    <a href="https://api.whatsapp.com/send?phone=+393345044443?">
+                                        <p class="pNavWhats"><i class="fa fa-whatsapp contactNavLink"></i></p>
+                                    </a>
+                                </div>
+                                <!-- <div class="col-4">
                             <a href="https://www.linkedin.com/in/giovanni-tidei/">
                                 <p class="pNavLinkedin"><i class="fa fa-linkedin contactNavLink"></i></p>
                             </a>
                         </div>-->
-                            <div class="col-2">
-                                <a href="mailto:jovanni.tidei@gmail.com">
-                                    <p class="pNavMail"><i class="fa fa-envelope contactNavLink"></i></p>
-                                </a>
+                                <div class="col-2">
+                                    <a href="mailto:jovanni.tidei@gmail.com">
+                                        <p class="pNavMail"><i class="fa fa-envelope contactNavLink"></i></p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
+
+                        </div>
 
                     </div>
 
-                </div>
+            </nav>
 
-        </nav>
+        </section>
 
-    </section>
+        <!-- ------------- fine navbar ------------ --->
 
-    <!-- ------------- fine navbar ------------ --->
-
-    <!-- <svg id="arrow" class="animate__animated animate__pulse animate__infinite" width="60" height="60" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg id="arrow" class="animate__animated animate__pulse animate__infinite" width="60" height="60" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M143.871 511.984C133.473 511.984 123.273 507.922 115.59 500.25L17.6289 402.496C6.26172 391.152 0 376.062 0 360.004C0 343.945 6.26172 328.852 17.6289 317.508L115.59 219.754C127.102 208.262 144.254 204.867 159.285 211.102C174.297 217.328 183.996 231.844 183.996 248.078V340C342.801 340 472 210.801 472 51.9961V20C472 8.95312 480.953 0 492 0C503.047 0 512 8.95312 512 20V51.9961C512 139.609 477.883 221.98 415.93 283.934C353.977 345.883 271.609 380.004 183.996 380.004C161.938 380.004 143.992 362.059 143.992 340.004V248.078C143.992 248.074 143.992 248.07 143.992 248.066C143.961 248.051 143.922 248.035 143.887 248.023C143.875 248.039 143.859 248.051 143.844 248.066L45.8828 345.824C42.0898 349.609 40 354.645 40 360.004C40 365.363 42.0898 370.398 45.8828 374.184L143.844 471.938L143.887 471.98C143.922 471.969 143.961 471.957 143.992 471.941C143.992 471.938 143.992 471.934 143.992 471.926V450.004C143.992 438.957 152.949 430.004 163.996 430.004C175.039 430.004 183.996 438.957 183.996 450.004V471.926C183.996 488.16 174.297 502.676 159.285 508.902C154.289 510.977 149.055 511.984 143.871 511.984Z" fill="black"/>
         </svg> -->
 
-    <!-- --------------- Gallery ------------------ -->
-    <section id="galleria">
-        <div class="container">
+        <!-- --------------- Gallery ------------------ -->
+        <section id="galleria">
+            <div class="container">
 
-            <p class="pt-4 classi" style="color: blue;"><b>3^ Classe</b></p>
-            <a href="4classe.html">
-                <p class="pt-3 classi">4^ Classe</p>
-            </a>
-            <a href="5classe.html">
-                <p class="pt-3 classi">5^ Classe</p>
-            </a>
+                <p class="pt-4 classi" style="color: blue;"><b>3^ Classe</b></p>
+                <a href="4classe.html">
+                    <p class="pt-3 classi">4^ Classe</p>
+                </a>
+                <a href="5classe.html">
+                    <p class="pt-3 classi">5^ Classe</p>
+                </a>
 
-            <div class="btn-group d-flex justify-content-around pt-4" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-outline-dark" onclick="openPage('Filosofia')">Filosofia</button>
-                <button type="button" class="btn btn-outline-dark" onclick="openPage('Storia')">Storia</button>
+                <div class="btn-group d-flex justify-content-around pt-4" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-dark" onclick="openPage('Filosofia')">Filosofia</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="openPage('Storia')">Storia</button>
 
-            </div>
+                </div>
 
-            <!-- test navbar -->
+                <!-- test navbar -->
 
-            <div class="gallery">
+                <div class="gallery">
 
-                <section id="Filosofia" class="tabcontent">
-
-
-
-                    </span>
-                    <div class="container">
-
-                    </div>
-                    <!-- 1 - La nascita della filosofia -->
-
-                    <div>
-
-                        <a href="https://docs.google.com/file/d/1cnl7vgEDTU9CLlveS6bpPwJoriOI9OMX/view" target="_blank" rel="noopener noreferrer">
-                            <p>1 - La nascita della filosofia &nbsp;</p>
-
-                        </a>
+                    <section id="Filosofia" class="tabcontent">
 
 
-                    </div>
-                    <audio controls class=" text-center mt-2">
+
+                        </span>
+                        <div class="container">
+
+                        </div>
+                        <!-- 1 - La nascita della filosofia -->
+
+                        <div>
+
+                            <a href="https://docs.google.com/file/d/1cnl7vgEDTU9CLlveS6bpPwJoriOI9OMX/view" target="_blank" rel="noopener noreferrer">
+                                <p>1 - La nascita della filosofia &nbsp;</p>
+
+                            </a>
+
+
+                        </div>
+                        <audio controls class=" text-center mt-2">
                         <source src="https://giovannitidei.github.io/lex/3Filosofia_1.1.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                      Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                       </audio>
-                    <!--   
+                        <!--   
                          <div class="google-slides-container mt-4">
                         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                             webkitallowfullscreen="true"></iframe>
                     </div>
                 -->
 
-                    <!--2 - La scuola di Mileto e i Pitagorici -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1cxdZQkW9q6Svz2lzCu_IwPtKGEvv2Rr_/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">2 - La scuola di Mileto e i Pitagorici</p>
-                        </a>
+                        <!--2 - La scuola di Mileto e i Pitagorici -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1cxdZQkW9q6Svz2lzCu_IwPtKGEvv2Rr_/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">2 - La scuola di Mileto e i Pitagorici</p>
+                            </a>
 
-                        <!-- Modal test valido-->
 
-                        <section>
-                            <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/DJAar6AeTbc" data-toggle="modal" data-target="#myModal-F" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                            <!-- Modal test valido-->
 
-                            <!-- VIDEO MODAL -->
-                            <div class="modal fade youtube-video" id="myModal-F" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <div id="video-container" class="video-container">
-                                                <iframe id="youtubevideo-F" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            <section>
+                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/DJAar6AeTbc" data-toggle="modal" data-target="#myModal-F" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+
+                                <!-- VIDEO MODAL -->
+                                <div class="modal fade youtube-video" id="myModal-F" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div id="video-container" class="video-container">
+                                                    <iframe id="youtubevideo-F" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button id="close-video-F" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                            <div class="modal-footer">
+                                                <button id="close-video-F" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- VIDEO MODAL -->
-                        </section>
+                                <!-- VIDEO MODAL -->
+                            </section>
 
-                        <!-- Fine Modal test -->
+                            <!-- Fine Modal test -->
 
-                        <audio controls class=" text-center mt-2">
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3F-2-ScuoladiMileto.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--3 - Eraclito, Parmenide, Zenone -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/19ghTHH0tJcIlUj-P4IbL1jpexYXzSDVM/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">3 - Eraclito, Parmenide, Zenone</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!--3 - Eraclito, Parmenide, Zenone -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/19ghTHH0tJcIlUj-P4IbL1jpexYXzSDVM/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">3 - Eraclito, Parmenide, Zenone</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3F-3-EraclitoParmenideZenone.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--4 - I pluralisti -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/18dXmvfmLXbdDzHur5OffHgJVr_LLOzd9/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">4 - I pluralisti</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!--4 - I pluralisti -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/18dXmvfmLXbdDzHur5OffHgJVr_LLOzd9/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">4 - I pluralisti</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3F-4-Pluralisti.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!-- 5 - I sofisti -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1mJh0VHrtDugCIODoJt9h2CmByPlnSPlu/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">5 - I sofisti</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!-- 5 - I sofisti -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1mJh0VHrtDugCIODoJt9h2CmByPlnSPlu/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">5 - I sofisti</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3F-5.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!-- 6 - Socrate-->
-                    <div>
-                        <a href="https://drive.google.com/file/d/15bJN3SkAgM7LvjfPLxnCZ4yJpN3pcG0L/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">6 - Socrate</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!-- 6 - Socrate-->
+                        <div>
+                            <a href="https://drive.google.com/file/d/15bJN3SkAgM7LvjfPLxnCZ4yJpN3pcG0L/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">6 - Socrate</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3F-6.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!-- 7-  Platone  -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1eRJidpOtGWZAetSxHN83qp0JjNS64aFi/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">7 - Platone</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!-- 7-  Platone  -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1eRJidpOtGWZAetSxHN83qp0JjNS64aFi/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">7 - Platone</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3F-7-Platone.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!-- (A) - Platone - Il mito della caverna -->
-                    <div>
-                        <a href="https://online.scuola.zanichelli.it/lezionifilosofia-files/volume-a/u3/U3-L06_zanichelli_Platone.pdf" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">(A) - Platone - Il mito della caverna ("Repubblica", libro VII)</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!-- (A) - Platone - Il mito della caverna -->
+                        <div>
+                            <a href="https://online.scuola.zanichelli.it/lezionifilosofia-files/volume-a/u3/U3-L06_zanichelli_Platone.pdf" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">(A) - Platone - Il mito della caverna ("Repubblica", libro VII)</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source id="caverna" src="https://giovannitidei.github.io/lex/3Filosofia_(A)mito_della_caverna.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
 
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!-- -->
+                        <!-- -->
 
-                    <!--A - L'ultimo Platone -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1gc3X9RmQYJf8g2HWa8IWjUerl8yGUfkL/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">(A) - L'ultimo Platone</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!--A - L'ultimo Platone -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1gc3X9RmQYJf8g2HWa8IWjUerl8yGUfkL/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">(A) - L'ultimo Platone</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Filosofia_3.4.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!-- 8 - Aristotele -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1f05czdBly5-FrM0eYeD3Oegn09yvqNBc/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">8 - Aristotele</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!-- 8 - Aristotele -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1f05czdBly5-FrM0eYeD3Oegn09yvqNBc/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">8 - Aristotele</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Filosofia_4.1.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                  -->
-                    </div>
+                        </div>
 
 
-                    <!--9 - L'età ellenistica -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1V24Ph26gQfv98q5yN6sbVfvTAX7zGSY4/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">9 - L'età ellenistica - Scetticismo, Epicureismo, Stoicismo</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!--9 - L'età ellenistica -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1V24Ph26gQfv98q5yN6sbVfvTAX7zGSY4/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">9 - L'età ellenistica - Scetticismo, Epicureismo, Stoicismo</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Filosofia_5.1.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
   -->
-                    </div>
+                        </div>
 
 
-                    <!-- 10 Plotino e il neoplatonismo -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1QkhopBO2AnWfeViFQnEHTxJwJlkP2kh_/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">10 - Plotino e il neoplatonismo</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!-- 10 Plotino e il neoplatonismo -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1QkhopBO2AnWfeViFQnEHTxJwJlkP2kh_/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">10 - Plotino e il neoplatonismo</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Filosofia_6.2.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!--11 - La Patristica e Agostino -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1i5gaijig5fIXeT5K_Y_5uf8xHwCk5Msa/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">11 - La Patristica e Agostino</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!--11 - La Patristica e Agostino -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1i5gaijig5fIXeT5K_Y_5uf8xHwCk5Msa/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">11 - La Patristica e Agostino</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Filosofia_6.3.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!--12 - La Scolastica e Tommaso  -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1OdoRmaOAJgY6CY4tmKuIhuhrnmcOM7Pd/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">12 - La Scolastica e Tommaso</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!--12 - La Scolastica e Tommaso  -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1OdoRmaOAJgY6CY4tmKuIhuhrnmcOM7Pd/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">12 - La Scolastica e Tommaso</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Filosofia_7.2.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                </section>
+                    </section>
 
 
-                <section id="Storia" class="tabcontent">
+                    <section id="Storia" class="tabcontent">
 
-                    <!-- L'Europa carolingia -->
-                    <div>
-                        <a href="https://docs.google.com/document/d/1RRH615BZVx5tWOmYZ4Huiwdh1MZIkxIelPigBNGMVSw/edit#heading=h.mibm3rd5idgf" target="_blank" rel="noopener noreferrer">
-                            <p>(F) L'Europa carolingia</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
+                        <!-- L'Europa carolingia -->
+                        <div>
+                            <a href="https://docs.google.com/document/d/1RRH615BZVx5tWOmYZ4Huiwdh1MZIkxIelPigBNGMVSw/edit#heading=h.mibm3rd5idgf" target="_blank" rel="noopener noreferrer">
+                                <p>(F) L'Europa carolingia</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/f-ZBRHTxDcY" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/f-ZBRHTxDcY" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
+                                    <!-- VIDEO MODAL -->
+                                </section>
 
-                            <!-- Fine Modal test -->
-                        </div>
-                        <audio controls class=" text-center mt-2">
+                                <!-- Fine Modal test -->
+                            </div>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_0.1.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
 
-                    </div>
-                    <br>
+                        </div>
+                        <br>
 
 
-                    <!-- 1 - Un mondo in trasformazione -->
-                    <div>
-                        <a href="https://drive.google.com/file/d/1LSK4LmOPyQod-lSMe8iCvqkSJTGyn4iO/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-4">1 - Un mondo in trasformazione</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <!-- 1 - Un mondo in trasformazione -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1LSK4LmOPyQod-lSMe8iCvqkSJTGyn4iO/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-4">1 - Un mondo in trasformazione</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_1.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!-- 2 - Impero, Papato, monarchie feudali e città marinare -->
+                        <!-- 2 - Impero, Papato, monarchie feudali e città marinare -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1X0MGFK9QJq1v_FkvuX-25_DoGJY4Kr-e/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">2 - Impero, Papato, monarchie feudali e città marinare</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <div>
+                            <a href="https://drive.google.com/file/d/1X0MGFK9QJq1v_FkvuX-25_DoGJY4Kr-e/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">2 - Impero, Papato, monarchie feudali e città marinare</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_2.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--3 - Le crociate -->
+                        <!--3 - Le crociate -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1pgZeU24hPwSS6s12s_Pchavzp4TyId4b/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">3 - Le crociate</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1pgZeU24hPwSS6s12s_Pchavzp4TyId4b/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">3 - Le crociate</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/vR82SuL_XFY" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/vR82SuL_XFY" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
+                                    <!-- VIDEO MODAL -->
+                                </section>
 
-                            <!-- Fine Modal test 2-->
-                        </div>
-                        <audio controls class=" text-center mt-2">
+                                <!-- Fine Modal test 2-->
+                            </div>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_3.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!-- 4 - I comuni e gli Svevi in Italia-->
+                        <!-- 4 - I comuni e gli Svevi in Italia-->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1_08Qrx8x-Lmhl1VOM9kwriJnD2c1T1b3/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">4 - I comuni e gli Svevi in Italia</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1_08Qrx8x-Lmhl1VOM9kwriJnD2c1T1b3/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">4 - I comuni e gli Svevi in Italia</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/HUngCWMVovE" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/HUngCWMVovE" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
+                                    <!-- VIDEO MODAL -->
+                                </section>
 
-                            <!-- Fine Modal test -->
-                        </div>
-                        <audio controls class=" text-center mt-2">
+                                <!-- Fine Modal test -->
+                            </div>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_4.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--5 - La fine degli universalismi e la crisi del Trecento -->
+                        <!--5 - La fine degli universalismi e la crisi del Trecento -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1rjNE2wtDX4vmnJ6gEQxZvbCPspfDVb4L/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">5 - La fine degli universalismi e la crisi del Trecento</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1rjNE2wtDX4vmnJ6gEQxZvbCPspfDVb4L/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">5 - La fine degli universalismi e la crisi del Trecento</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/4ww6QVG3UyQ" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/4ww6QVG3UyQ" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
+                                    <!-- VIDEO MODAL -->
+                                </section>
 
-                            <!-- Fine Modal test -->
-                        </div>
-                        <audio controls class=" text-center mt-2">
+                                <!-- Fine Modal test -->
+                            </div>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_5.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
-
-                    <!--6 - Le monarchie nazionali e la guerra dei cent'anni -->
-
-                    <div>
-                        <a href="https://drive.google.com/file/d/1I5_WT4fikpLao5SskUk4DtRbIMrdpYPs/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">6 - Le monarchie nazionali e la guerra dei cent'anni</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
-
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/spFA8SfT5TE" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
-
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
-
-                            <!-- Fine Modal valido-->
-                            &nbsp;
-                            <!-- Modal test valido-->
-
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/j4VDuXD6s14" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
-
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
-
-                            <!-- Fine Modal valido-->
                         </div>
 
-                        <audio controls class=" text-center mt-2">
+                        <!--6 - Le monarchie nazionali e la guerra dei cent'anni -->
+
+                        <div>
+                            <a href="https://drive.google.com/file/d/1I5_WT4fikpLao5SskUk4DtRbIMrdpYPs/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">6 - Le monarchie nazionali e la guerra dei cent'anni</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
+
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/spFA8SfT5TE" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- VIDEO MODAL -->
+                                </section>
+
+                                <!-- Fine Modal valido-->
+                                &nbsp;
+                                <!-- Modal test valido-->
+
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/j4VDuXD6s14" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- VIDEO MODAL -->
+                                </section>
+
+                                <!-- Fine Modal valido-->
+                            </div>
+
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_6.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--7 - L'Italia degli stati regionali e l'Umanesimo -->
+                        <!--7 - L'Italia degli stati regionali e l'Umanesimo -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1l13_ESuriUE5Vx9IiGEJHgq1dBQ_zXmd/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">7 - L'Italia degli stati regionali e l'Umanesimo</p>
-                        </a>
+                        <div>
+                            <a href="https://drive.google.com/file/d/1l13_ESuriUE5Vx9IiGEJHgq1dBQ_zXmd/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">7 - L'Italia degli stati regionali e l'Umanesimo</p>
+                            </a>
 
-                        <audio controls class=" text-center mt-2">
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_7.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--8 - I conflitti religiosi in Europa e l'espansione ottomana -->
+                        <!--8 - I conflitti religiosi in Europa e l'espansione ottomana -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/159Oa5awzXjQC0D_SmCywDXf4uhc6whns/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">8 - I conflitti religiosi in Europa e l'espansione ottomana</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <div>
+                            <a href="https://drive.google.com/file/d/159Oa5awzXjQC0D_SmCywDXf4uhc6whns/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">8 - I conflitti religiosi in Europa e l'espansione ottomana</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_8.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--9 - Il mondo extraeuropeo -->
+                        <!--9 - Il mondo extraeuropeo -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1_zyaCRCgVSRSwlv-I6ceWNsY3FZXIQfd/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">9 - Il mondo extraeuropeo (F)</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <div>
+                            <a href="https://drive.google.com/file/d/1_zyaCRCgVSRSwlv-I6ceWNsY3FZXIQfd/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">9 - Il mondo extraeuropeo (F)</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_9.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!--10 - I viaggi di esplorazione e le conquiste -->
+                        <!--10 - I viaggi di esplorazione e le conquiste -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1L8rdVtIeUXbQM3Pg1EHFmMkW9MxfMRr0/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">10 - I viaggi di esplorazione e le conquiste</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1L8rdVtIeUXbQM3Pg1EHFmMkW9MxfMRr0/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">10 - I viaggi di esplorazione e le conquiste</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/oWMr-7Cqt4k" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/oWMr-7Cqt4k" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
+                                    <!-- VIDEO MODAL -->
+                                </section>
 
-                            <!-- Fine Modal test -->
-                        </div>
-                        <audio controls class=" text-center mt-2">
+                                <!-- Fine Modal test -->
+                            </div>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_10.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!--11 - Il Rinascimento -->
+                        <!--11 - Il Rinascimento -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1gvZUHaXmshh2AgUHkQbb_UmU_d8YJMnG/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">11 - Il Rinascimento</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Mappa modal -->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1gvZUHaXmshh2AgUHkQbb_UmU_d8YJMnG/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">11 - Il Rinascimento</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Mappa modal -->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/yZ6_wQoERnw" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/yZ6_wQoERnw" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
-                        </div>
+                                    <!-- VIDEO MODAL -->
+                                </section>
+                            </div>
 
-                        <!--  FIneMappa modal -->
-                        <audio controls class=" text-center mt-2">
+                            <!--  FIneMappa modal -->
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_11.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!--12 - L'Europa tra Riforma e Controriforma -->
+                        <!--12 - L'Europa tra Riforma e Controriforma -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/12zCstmc2uJl2QDQLEsfElVp94d1tZcQ_/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">12 - L'Europa tra Riforma e Controriforma</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <div>
+                            <a href="https://drive.google.com/file/d/12zCstmc2uJl2QDQLEsfElVp94d1tZcQ_/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">12 - L'Europa tra Riforma e Controriforma</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_12.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!--13 - Carlo V e l'egemonia spagnola in Europa -->
+                        <!--13 - Carlo V e l'egemonia spagnola in Europa -->
 
-                    <div>
+                        <div>
 
-                        <a href="https://drive.google.com/file/d/1VVGl4HDLe_iP3gT-EI4NY4Ya24-j7vIm/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">13 - Carlo V e l'egemonia spagnola in Europa</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
+                            <a href="https://drive.google.com/file/d/1VVGl4HDLe_iP3gT-EI4NY4Ya24-j7vIm/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">13 - Carlo V e l'egemonia spagnola in Europa</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/jCt2Z4bvah8" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/jCt2Z4bvah8" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"> <i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
+                                    <!-- VIDEO MODAL -->
+                                </section>
 
-                            <!-- Fine Modal test -->
-                        </div>
+                                <!-- Fine Modal test -->
+                            </div>
 
-                        <audio controls class=" text-center mt-2">
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_13.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--14 - La diffusione della Riforma e le resistenze -->
+                        <!--14 - La diffusione della Riforma e le resistenze -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1kggQBZGOCRMWjuk9K3byGx4yvPrzu8Eg/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">14 - La diffusione della Riforma e le resistenze</p>
-                        </a>
+                        <div>
+                            <a href="https://drive.google.com/file/d/1kggQBZGOCRMWjuk9K3byGx4yvPrzu8Eg/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">14 - La diffusione della Riforma e le resistenze</p>
+                            </a>
 
-                        <audio controls class=" text-center mt-2">
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_14.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--15 - L'Europa dello sviluppo e le origini del capitalismo -->
+                        <!--15 - L'Europa dello sviluppo e le origini del capitalismo -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1Hy-OL8oawjZljZfYdDFB_bjUQMVCB3ZC/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">15 - L'Europa dello sviluppo e le origini del capitalismo</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <div>
+                            <a href="https://drive.google.com/file/d/1Hy-OL8oawjZljZfYdDFB_bjUQMVCB3ZC/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">15 - L'Europa dello sviluppo e le origini del capitalismo</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_15.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!--16 - L'Europa della crisi e della stagnazione -->
+                        <!--16 - L'Europa della crisi e della stagnazione -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1ga_VMwTCxHsNVAyUL9wLm5FUB-Rx_0z2/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">16 - L'Europa della crisi e della stagnazione</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
+                        <div>
+                            <a href="https://drive.google.com/file/d/1ga_VMwTCxHsNVAyUL9wLm5FUB-Rx_0z2/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">16 - L'Europa della crisi e della stagnazione</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
 
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/9LUDwrtLAjs" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/9LUDwrtLAjs" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
 
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
+                                    <!-- VIDEO MODAL -->
+                                </section>
 
-                            <!-- Fine Modal test -->
-                        </div>
-                        <audio controls class=" text-center mt-2">
+                                <!-- Fine Modal test -->
+                            </div>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_16.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
-                    <!-- 17 - La visione del mondo e la scienza nel Seicento-->
+                        <!-- 17 - La visione del mondo e la scienza nel Seicento-->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1EXnX3gZ4n5cq1LJjhip-Cly6c0rZkFg_/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">17 - La visione del mondo e la scienza nel Seicento</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <div>
+                            <a href="https://drive.google.com/file/d/1EXnX3gZ4n5cq1LJjhip-Cly6c0rZkFg_/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">17 - La visione del mondo e la scienza nel Seicento</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_17.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
-
-                    <!--18 - Il Seicento tra guerre, rivolte e rivoluzioni -->
-
-                    <div>
-                        <a href="https://drive.google.com/file/d/1lF9eTFkgaZqJQUvwJkT9E9NjGCPJyNNm/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">18 - Il Seicento tra guerre, rivolte e rivoluzioni</p>
-                        </a>
-                        <div class="row ml-1">
-                            <!-- Modal test valido-->
-
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/62cAE1qFkO4" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
-
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
-
-                            <!-- Fine Modal test -->
-                            &nbsp;
-                            <!-- Modal video 2-->
-
-                            <section>
-                                <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/p7PTGiLicFA" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
-
-                                <!-- VIDEO MODAL -->
-                                <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <div id="video-container" class="video-container">
-                                                    <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- VIDEO MODAL -->
-                            </section>
-
-                            <!-- Fine Modal video 2 -->
                         </div>
-                        <audio controls class=" text-center mt-2">
+
+                        <!--18 - Il Seicento tra guerre, rivolte e rivoluzioni -->
+
+                        <div>
+                            <a href="https://drive.google.com/file/d/1lF9eTFkgaZqJQUvwJkT9E9NjGCPJyNNm/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">18 - Il Seicento tra guerre, rivolte e rivoluzioni</p>
+                            </a>
+                            <div class="row ml-1">
+                                <!-- Modal test valido-->
+
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/62cAE1qFkO4" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- VIDEO MODAL -->
+                                </section>
+
+                                <!-- Fine Modal test -->
+                                &nbsp;
+                                <!-- Modal video 2-->
+
+                                <section>
+                                    <a id="play-video" class="play-button" data-url="https://www.youtube.com/embed/p7PTGiLicFA" data-toggle="modal" data-target="#myModal-S" title="XJj2PbenIsU"><i class="fa fa-youtube-play" data-toggle="modal" style="font-size: 30px; color: red"></i></a>
+
+                                    <!-- VIDEO MODAL -->
+                                    <div class="modal fade youtube-video" id="myModal-S" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div id="video-container" class="video-container">
+                                                        <iframe id="youtubevideo-S" src="" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button id="close-video-S" type="button" class="button btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true" style="font-size: 70px"></i></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- VIDEO MODAL -->
+                                </section>
+
+                                <!-- Fine Modal video 2 -->
+                            </div>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_18.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
+                        </div>
 
 
-                    <!--19 - Il Seicento tra assolutismo e liberalismo -->
+                        <!--19 - Il Seicento tra assolutismo e liberalismo -->
 
-                    <div>
-                        <a href="https://drive.google.com/file/d/1wqXTneVvkvriHtj4FQteuHrqGnbINW2Y/view" target="_blank" rel="noopener noreferrer">
-                            <p class="mt-5">19 - Il Seicento tra assolutismo e liberalismo</p>
-                        </a>
-                        <audio controls class=" text-center mt-2">
+                        <div>
+                            <a href="https://drive.google.com/file/d/1wqXTneVvkvriHtj4FQteuHrqGnbINW2Y/view" target="_blank" rel="noopener noreferrer">
+                                <p class="mt-5">19 - Il Seicento tra assolutismo e liberalismo</p>
+                            </a>
+                            <audio controls class=" text-center mt-2">
                             <source src="https://giovannitidei.github.io/lex/3Storia_19.mp3" type="audio/mpeg" type="audio/mpeg" type="audio/mpeg">
                          Audio non supportato, prova ad aprirlo con Google Chrome o da computer
                           </audio>
-                        <!--   
+                            <!--   
                              <div class="google-slides-container mt-4">
                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmUvFeDwVNlTQbKL-8grZ1x0kjINkda7k7IiT2eI4C3IiFGBXY_TFrD52-T1zkXA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true"
                                 webkitallowfullscreen="true"></iframe>
                         </div>
                     -->
-                    </div>
-
-
-
-                </section>
-
-
-
-            </div>
-        </div>
-
-
-        <!-- modal img -->
-
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content" onContextMenu="return false;">
-                    <div class="modal-body">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- --------------- Fine Gallery ------------- -->
-
-    <!-- ---------------- Footer ------------------ -->
-
-    <footer id="footer">
-
-        <div id="footerbuttondown">&#9660;</div>
-        <div id="footerbuttonup">&#9650;</div>
-
-        <section class="site-footer">
-            <div class="container">
-                <div class="row ml-1">
-
-                    <div class="col-10 col-md-5">
-                        <!-- title collapse -->
-                        <h6 class="hidden visible-xs">
-                            Prof.<br>Giovanni Tidei
-                        </h6>
-
-                        <!-- <i class="fa fa-angle-down"></i> -->
-
-                        <!-- content collapse -->
-                        <div class="mt-3">
-                            <ul class="footer-links well">
-                                <li><b>T.</b><a href="tel:+393345044443"> +39 3345044443</a>
-                                </li>
-                                <li><b>E.</b><a href="mailto:jovanni.tidei@gmail.com">  jovanni.tidei@gmail.com</a></li>
-                            </ul>
                         </div>
-                    </div>
+
+
+
+                    </section>
+
+
 
                 </div>
-
-                <hr>
-
-                <div class="container">
-                    <div class="row">
+            </div>
 
 
-                        <div class="col-md-12 col-sm-6 col-xs-2">
-                            <ul class="social-icons">
-                                <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=+393345044443"><i class="fa fa-whatsapp"></i></a></li>
-                                <!-- <li><a class="linkedin" href="https://www.linkedin.com/in/giovanni-tidei/"><i class="fa fa-linkedin"></i></a></li> -->
-                                <li><a class="envelope" href="mailto:jovanni.tidei@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                            </ul>
+            <!-- modal img -->
+
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" onContextMenu="return false;">
+                        <div class="modal-body">
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </section>
 
-    </footer>
+        <!-- --------------- Fine Gallery ------------- -->
 
-    <!-- --------------- FINE Footer ------------- --->
+        <!-- ---------------- Footer ------------------ -->
+
+        <footer id="footer">
+
+            <div id="footerbuttondown">&#9660;</div>
+            <div id="footerbuttonup">&#9650;</div>
+
+            <section class="site-footer">
+                <div class="container">
+                    <div class="row ml-1">
+
+                        <div class="col-10 col-md-5">
+                            <!-- title collapse -->
+                            <h6 class="hidden visible-xs">
+                                Prof.<br>Giovanni Tidei
+                            </h6>
+
+                            <!-- <i class="fa fa-angle-down"></i> -->
+
+                            <!-- content collapse -->
+                            <div class="mt-3">
+                                <ul class="footer-links well">
+                                    <li><b>T.</b><a href="tel:+393345044443"> +39 3345044443</a>
+                                    </li>
+                                    <li><b>E.</b><a href="mailto:jovanni.tidei@gmail.com">  jovanni.tidei@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="container">
+                        <div class="row">
+
+
+                            <div class="col-md-12 col-sm-6 col-xs-2">
+                                <ul class="social-icons">
+                                    <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=+393345044443"><i class="fa fa-whatsapp"></i></a></li>
+                                    <!-- <li><a class="linkedin" href="https://www.linkedin.com/in/giovanni-tidei/"><i class="fa fa-linkedin"></i></a></li> -->
+                                    <li><a class="envelope" href="mailto:jovanni.tidei@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </footer>
+
+        <!-- --------------- FINE Footer ------------- --->
+    </section>
+    <!--Fine Sezione sblocco-->
+
 
     <!-- ------------Custom js------------------ -->
 
