@@ -1,2 +1,0 @@
-# Prof.GiovanniTidei
-Supporto didattico
